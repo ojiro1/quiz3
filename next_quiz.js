@@ -7,7 +7,7 @@ const additionalWordsAndTranslations5 = [
     { word: "maintenance", translation: "konserwacja" },
     { word: "carrier", translation: "przewoźnik" },
     { word: "freight forwarder", translation: "spedytor" },
-    { word: "supplier", translation: "dostawa" },
+    { word: "supplier", translation: "dostawca" },
     { word: "haulage contractor", translation: "wykonawca transportu" },
     { word: "courier", translation: "kurier" },
     { word: "consignee", translation: "odbiorca" },
