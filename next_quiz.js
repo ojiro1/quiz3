@@ -16,7 +16,7 @@ const additionalWordsAndTranslations5 = [
     { word: "range", translation: "zakres/zasięg" },
     { word: "liaise", translation: "nawiązać łączność" },
     { word: "ensure", translation: "zapewnić" },
-    { word: "transhipment", translation: "przeładunek" },
+    { word: "transshipment", translation: "przeładunek" },
     { word: "break bulk", translation: "przerwy zbiorcze" },
     { word: "order picking", translation: "kompletacja zamówień" },
     { word: "reverse logistics", translation: "logistyka zwrotów" },
