@@ -27,8 +27,8 @@ function createQuiz() {
 
 function checkAnswers() {
     additionalWordsAndTranslations6.forEach((item, index) => {
-        const userAnswer = document.getElementById(`answer${index}`).value.trim().toLowerCase().replace(/\s*\([^)]*\)\s*/g, '');
-        const correctAnswer = item.word.toLowerCase().replace(/\s*\([^)]*\)\s*/g, '');
+        const userAnswer = document.getElementById(`answer${index}`).value.trim().toLowerCase().replace(/\s+/g, ' ');
+        const correctAnswer = item.word.toLowerCase().replace(/\s+/g, ' ');
         const resultSpan = document.getElementById(`result${index}`);
         const isCorrect = userAnswer === correctAnswer;
         resultSpan.className = isCorrect ? 'correct' : 'incorrect';
