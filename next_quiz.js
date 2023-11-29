@@ -52,21 +52,15 @@ function createQuiz() {
 }
 
 function checkAnswers() {
-    let allCorrect = true;
     additionalWordsAndTranslations5.forEach((item, index) => {
-        const userAnswer = document.getElementById(`answer${index}`).value.trim().toLowerCase();
-        const correctAnswer = item.word.toLowerCase();
+        const userAnswer = document.getElementById(`answer${index}`).value.trim().toLowerCase().replace(/\s+/g, ' ');
+        const correctAnswer = item.word.toLowerCase().replace(/\s+/g, ' ');
         const resultSpan = document.getElementById(`result${index}`);
         const isCorrect = userAnswer === correctAnswer;
         resultSpan.className = isCorrect ? 'correct' : 'incorrect';
         resultSpan.textContent = isCorrect ? 'Prawidłowo' : `Błędnie (poprawna odpowiedź: ${item.word})`;
-        if (!isCorrect) {
-            allCorrect = false;
-        }
     });
-    if (allCorrect) {
-        document.getElementById('nextQuiz').style.display = 'block';
-    }
+    document.getElementById('nextQuiz').style.display = 'block';
 }
 
 createQuiz();
